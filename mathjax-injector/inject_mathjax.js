@@ -16,11 +16,11 @@ head.appendChild(script)
 
 /* Inject the following HTML snippet to load the MathJax entrypoint script.
 
-<script type="text/javascript" async src="path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/javascript" async src="path-to-mathjax/MathJax.js?config=TeX-AMS_HTML"></script>
 */
 var script = document.createElement("script");
 script.type = "text/javascript";
-script.src = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+script.src = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML";
 head.appendChild(script);
 
 /* Inject the following HTML snippet to rerender math expressions when the DOM changes.
