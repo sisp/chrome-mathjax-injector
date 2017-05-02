@@ -11,7 +11,7 @@ MathJax.Hub.Config({
 */
 var script = document.createElement("script");
 script.type = "text/x-mathjax-config"
-script.innerHTML = "MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});"
+script.innerHTML = "MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});"
 head.appendChild(script)
 
 /* Inject the following HTML snippet to load the MathJax entrypoint script.
@@ -20,7 +20,8 @@ head.appendChild(script)
 */
 var script = document.createElement("script");
 script.type = "text/javascript";
-script.src = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML";
+//script.src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML";
+script.src = "https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
 head.appendChild(script);
 
 /* Inject the following HTML snippet to rerender math expressions when the DOM changes.
